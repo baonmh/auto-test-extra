@@ -1,7 +1,9 @@
 ### First thing first
-Read cucumber doc and example
-Read serenity-appium framework structure
-Try to create new app: AutoTestExtra
++ Read cucumber doc and some examples
+
++ Read serenity-appium framework structure
+
++ Try to create new app: AutoTestExtra
 
 ### Issues and Solutions:
 [main] ERROR net.thucydides.core.webdriver.WebDriverFacade - FAILED TO CREATE NEW WEBDRIVER_DRIVER INSTANCE class io.appium.java_client.AppiumDriver: Could not instantiate new WebDriver instance of type class io.appium.java_client.AppiumDriver (An unknown server-side error occurred while processing the command. Original error: A new session could not be created. Details: session not created: This version of ChromeDriver only supports Chrome version 84
