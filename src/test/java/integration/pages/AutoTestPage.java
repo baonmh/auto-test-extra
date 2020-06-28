@@ -28,6 +28,7 @@ public class AutoTestPage extends PageObject {
 
     public void gotoGuru() throws MalformedURLException {
         getDriver().get("http:demo.guru99.com/v4");
+
     }
 
     public void user_login(){
