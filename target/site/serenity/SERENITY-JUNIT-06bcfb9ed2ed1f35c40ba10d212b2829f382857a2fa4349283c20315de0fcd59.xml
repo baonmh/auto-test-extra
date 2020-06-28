@@ -1,6 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Test Guru with Chrome on Android device" skipped="0" tests="1" time="1.68" timestamp="2020-06-28T15:55:23.702392200+07:00[Asia/Bangkok]"><testcase name="Verify login successful on Guru"><failure message="The page object class integration.pages.AutoTestPage looks dodgy:&#10;Failed to instantiate page (net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class io.appium.java_client.AppiumDriver)" type="net.thucydides.core.pages.WrongPageError">The page object class integration.pages.AutoTestPage looks dodgy:
-Failed to instantiate page (net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class io.appium.java_client.AppiumDriver)</failure><system-err>The page object class integration.pages.AutoTestPage looks dodgy:
-Failed to instantiate page (net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class io.appium.java_client.AppiumDriver)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-✽.User go to Guru(src/test/java/integration/resources/features/autotestextra.feature:5)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Test Guru with Chrome on Android device" skipped="0" tests="1" time="95.01" timestamp="2020-06-28T22:10:31.288732+07:00[Asia/Bangkok]"><testcase name="Verify login successful on Guru"/></testsuite>

@@ -3,7 +3,7 @@ Feature: Test Guru with Chrome on Android device
 
   Scenario Outline: Verify login successful on Guru
     Given User go to Guru
-    And User login with <username> and <password>
+    And User login
     Then Verify login successful
     Examples:
       | username                   | password  |

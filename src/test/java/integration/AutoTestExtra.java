@@ -4,6 +4,7 @@ import integration.serenitySteps.AutoTestExtraSteps;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -13,13 +14,13 @@ import org.openqa.selenium.WebDriver;
 @CucumberOptions(features="src/test/java/integration/resources/features/autotestextra.feature" ,
         plugin = {"json:target/cucumber_json/cucumber.json"} )
 public class AutoTestExtra {
-
     @Managed(uniqueSession = false)
     public WebDriver webdriver;
 
     @Steps
     public AutoTestExtraSteps userSteps;
-    //@Test
+
+    @Test
     public void verifyInvalidLogin(){
         try {
 

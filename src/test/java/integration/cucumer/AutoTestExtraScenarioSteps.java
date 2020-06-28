@@ -9,6 +9,9 @@ import integration.serenitySteps.AutoTestExtraSteps;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import net.thucydides.core.annotations.Steps;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class AutoTestExtraScenarioSteps {
 
     @Steps
@@ -16,17 +19,24 @@ public class AutoTestExtraScenarioSteps {
 
     @Given("^User go to Guru$")
     public void user_go_to_Guru() throws Exception {
+        System.out.println("debug-usergotoGuru-before");
         autoTestExtraSteps.gotoGuru();
-
+        System.out.println("debug-usergotoGuru-after");
     }
 
     @And("^User login$")
     public void user_login() throws Exception {
-        // Write code here that turns the phrase above into concrete actions
+        System.out.println("debug-user_login-before");
+        autoTestExtraSteps.user_login();
+        System.out.println("debug-user_login-after");
+//        throw new PendingException();
     }
 
     @Then("^Verify login successful$")
     public void verify_login_successful() throws Exception {
+        System.out.println("debug-verify_login_successful-before");
+
+        System.out.println("debug-verify_login_successful-after");
         // Write code here that turns the phrase above into concrete actions
     }
 

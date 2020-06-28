@@ -1,0 +1,58 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Verify login successful on Guru",
+        "description": "",
+        "id": "test-guru-with-chrome-on-android-device;verify-login-successful-on-guru;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19577243300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User go to Guru",
+            "match": {
+              "location": "AutoTestExtraScenarioSteps.user_go_to_Guru()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70595889501,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User login",
+            "match": {
+              "location": "AutoTestExtraScenarioSteps.user_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 506397401,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify login successful",
+            "match": {
+              "location": "AutoTestExtraScenarioSteps.verify_login_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test Guru with Chrome on Android device",
+    "description": "",
+    "id": "test-guru-with-chrome-on-android-device",
+    "keyword": "Feature",
+    "uri": "src/test/java/integration/resources/features/autotestextra.feature"
+  }
+]

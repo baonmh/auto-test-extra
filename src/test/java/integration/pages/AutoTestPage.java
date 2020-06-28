@@ -1,61 +1,39 @@
 package integration.pages;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSFindBy;
+import net.serenitybdd.core.pages.PageObject;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.junit.Assert;
 
-/**
- * Created by khanhdo on 8/30/18.
- */
-public class AutoTestPage extends MobilePageObject {
+import javax.xml.xpath.XPath;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
+
+public class AutoTestPage extends PageObject {
 
     public AutoTestPage(WebDriver driver) {
         super(driver);
     }
 
-    @iOSFindBy(xpath="//XCUIElementTypeButton[@label='START A REPAIR']")
-    private WebElement firstClick;
-//
-//    @iOSFindBy(xpath="//*[@label='Car and Truck']")
-//    private WebElement CarAndTruckText;
-//
-//    @iOSFindBy(xpath="//*[@label='Acura']")
-//    private WebElement AcuraText;
-//
-//    @iOSFindBy(xpath="//XCUIElementTypeNavigationBar")
-//    private WebElement XCUIElementTypeNavigationBar;
-//
-//    @iOSFindBy(xpath="//XCUIElementTypeStaticText[@label='Acura Integra']")
-//    private WebElement AcuraIntegraText;
-//
-//    @iOSFindBy(xpath="//XCUIElementTypeStaticText[@label='Acura MDX']")
-//    private WebElement AcuraMDXText;
-//
-//    @iOSFindBy(xpath="//XCUIElementTypeStaticText[@label='Acura RL']")
-//    private WebElement AcuraRLText;
-//
-//    @iOSFindBy(xpath="//XCUIElementTypeStaticText[@label='Acura TL']")
-//    private WebElement AcuraTLText;
-//
-//    @iOSFindBy(xpath="//XCUIElementTypeStaticText[@label='Acura TSX']")
-//    private WebElement AcuraTSXText;
-//
-    public void gotoGuru(){
-        getDriver().getPageSource();
-        element(firstClick).click();
+    public void gotoGuru() throws MalformedURLException {
+        getDriver().get("http:demo.guru99.com/v4");
     }
-//
-//    public void clickOnCarAndTruckText() {
-//        element(CarAndTruckText).click();
-//    }
-//
-//    public void clickOnAcuraText() {
-//        element(AcuraText).click();
-//    }
+
+    public void user_login(){
+
+    }
+
 //
 //    public void waitkOnXCUIElementTypeNavigationBar() {
 //        (new WebDriverWait(getDriver(), 60))
